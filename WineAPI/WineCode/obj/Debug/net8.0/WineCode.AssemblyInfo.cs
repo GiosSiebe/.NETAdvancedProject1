@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WineCode")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ae85d4b628ac93d8906c2390c9bc6d62f657ed6")]
 [assembly: System.Reflection.AssemblyProductAttribute("WineCode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WineCode")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

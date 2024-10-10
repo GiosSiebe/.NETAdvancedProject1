@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\.NET Advanced\\Project1\\WineAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{709008E1-A2E6-446A-831B-D3259E5AB476}|WineCode\\WineCode.csproj|c:\\.net advanced\\project1\\wineapi\\winecode\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{709008E1-A2E6-446A-831B-D3259E5AB476}|WineCode\\WineCode.csproj|solutionrelative:winecode\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{709008E1-A2E6-446A-831B-D3259E5AB476}|WineCode\\WineCode.csproj|c:\\.net advanced\\project1\\wineapi\\winecode\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709008E1-A2E6-446A-831B-D3259E5AB476}|WineCode\\WineCode.csproj|solutionrelative:winecode\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709008E1-A2E6-446A-831B-D3259E5AB476}|WineCode\\WineCode.csproj|c:\\.net advanced\\project1\\wineapi\\winecode\\kind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709008E1-A2E6-446A-831B-D3259E5AB476}|WineCode\\WineCode.csproj|solutionrelative:winecode\\kind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709008E1-A2E6-446A-831B-D3259E5AB476}|WineCode\\WineCode.csproj|c:\\.net advanced\\project1\\wineapi\\winecode\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709008E1-A2E6-446A-831B-D3259E5AB476}|WineCode\\WineCode.csproj|solutionrelative:winecode\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709008E1-A2E6-446A-831B-D3259E5AB476}|WineCode\\WineCode.csproj|c:\\.net advanced\\project1\\wineapi\\winecode\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709008E1-A2E6-446A-831B-D3259E5AB476}|WineCode\\WineCode.csproj|solutionrelative:winecode\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{709008E1-A2E6-446A-831B-D3259E5AB476}|WineCode\\WineCode.csproj|c:\\.net advanced\\project1\\wineapi\\winecode\\wine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{709008E1-A2E6-446A-831B-D3259E5AB476}|WineCode\\WineCode.csproj|solutionrelative:winecode\\wine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 87,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\Category.cs",
+              "RelativeDocumentMoniker": "WineCode\\Category.cs",
+              "ToolTip": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\Category.cs",
+              "RelativeToolTip": "WineCode\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:39:11.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Kind.cs",
+              "DocumentMoniker": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\Kind.cs",
+              "RelativeDocumentMoniker": "WineCode\\Kind.cs",
+              "ToolTip": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\Kind.cs",
+              "RelativeToolTip": "WineCode\\Kind.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:29:37.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\Class1.cs",
-              "RelativeDocumentMoniker": "WineCode\\Class1.cs",
-              "ToolTip": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\Class1.cs",
-              "RelativeToolTip": "WineCode\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Title": "Recipe.cs",
+              "DocumentMoniker": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\Recipe.cs",
+              "RelativeDocumentMoniker": "WineCode\\Recipe.cs",
+              "ToolTip": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\Recipe.cs",
+              "RelativeToolTip": "WineCode\\Recipe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:28:40.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Country.cs",
+              "DocumentMoniker": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\Country.cs",
+              "RelativeDocumentMoniker": "WineCode\\Country.cs",
+              "ToolTip": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\Country.cs",
+              "RelativeToolTip": "WineCode\\Country.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T09:28:06.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Wine.cs",
+              "DocumentMoniker": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\Wine.cs",
+              "RelativeDocumentMoniker": "WineCode\\Wine.cs",
+              "ToolTip": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\Wine.cs",
+              "RelativeToolTip": "WineCode\\Wine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T09:19:11.84Z",
               "EditorCaption": ""
