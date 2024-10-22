@@ -86,7 +86,7 @@ namespace WineCode.Data
                     Country = countries[0], // France
                     Categories = new List<Category> { categories[0] }, // Red
                     Kind = kinds[1], // Merlot
-                    Recipes = new List<Recipe> { recipes[0] } // Spaghetti Carbonara
+                  
                 },
                 new Wine
                 {
@@ -99,7 +99,7 @@ namespace WineCode.Data
                     Country = countries[1], // Italy
                     Categories = new List<Category> { categories[1] }, // White
                     Kind = kinds[0], // Sauvignon Blanc
-                    Recipes = new List<Recipe> { recipes[1] } // Chicken Cordon Bleu
+                    
                 }
             };
             context.Wines.AddRange(wines);

@@ -20,7 +20,6 @@ namespace WineAPI.Controllers
         }
 
         // GET: api/Categories
-        [Authorize]
         [HttpGet]
         public ActionResult<IEnumerable<Category>> GetCategories()
         {

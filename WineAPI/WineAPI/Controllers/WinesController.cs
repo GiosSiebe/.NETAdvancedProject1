@@ -26,8 +26,7 @@ namespace WineAPI.Controllers
             null, // No order
             w => w.Country,           // Include Country
             w => w.Categories,        // Include Categories
-            w => w.Kind,              // Include Kind
-            w => w.Recipes);          // Inlcude Recipes
+            w => w.Kind);          // Inlcude Recipes
 
 
             return Ok(wines);

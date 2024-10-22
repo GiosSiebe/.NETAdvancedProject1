@@ -12,6 +12,6 @@
         public Country Country { get; set; }
         public ICollection<Category> Categories { get; set; }
         public Kind Kind { get; set; }
-        public ICollection<Recipe>? Recipes { get; set; }
+      
     }
 }
