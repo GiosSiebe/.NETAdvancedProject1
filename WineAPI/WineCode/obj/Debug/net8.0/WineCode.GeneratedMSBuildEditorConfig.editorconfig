@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WineCode
-build_property.ProjectDir = C:\School\3APP\SEM1\.NET Advanced\Project\.NETAdvancedProject1\WineAPI\WineCode\
+build_property.ProjectDir = C:\.NET Advanced\.NETAdvancedProject1\WineAPI\WineCode\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

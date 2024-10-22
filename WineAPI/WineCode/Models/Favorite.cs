@@ -9,7 +9,6 @@ namespace WineCode.Models
     public class Favorite
     {
         public int FavoriteId { get; set; }
-        public User User { get; set; }
         public List<Wine> Favorites { get; set; } = new List<Wine>();
        
     }

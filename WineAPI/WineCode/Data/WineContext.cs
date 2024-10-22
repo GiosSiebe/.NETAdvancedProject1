@@ -21,7 +21,6 @@ namespace WineCode.Data
         public DbSet<Kind> Kinds { get; set; }
         public DbSet<Recipe> Recipes { get; set; }
         public DbSet<Favorite> Favorites { get; set; }
-        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -31,7 +30,6 @@ namespace WineCode.Data
             modelBuilder.Entity<Kind>().ToTable("Kind");
             modelBuilder.Entity<Recipe>().ToTable("Recipe");
             modelBuilder.Entity<Favorite>().ToTable("Favorite");
-            modelBuilder.Entity<User>().ToTable("User");
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

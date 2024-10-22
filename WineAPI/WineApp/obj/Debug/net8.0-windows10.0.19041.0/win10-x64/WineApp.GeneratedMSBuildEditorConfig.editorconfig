@@ -8,41 +8,41 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WineApp
-build_property.ProjectDir = C:\School\3APP\SEM1\.NET Advanced\Project\.NETAdvancedProject1\WineAPI\WineApp\
+build_property.ProjectDir = C:\.NET Advanced\.NETAdvancedProject1\WineAPI\WineApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/School/3APP/SEM1/.NET Advanced/Project/.NETAdvancedProject1/WineAPI/WineApp/App.xaml]
+[C:/.NET Advanced/.NETAdvancedProject1/WineAPI/WineApp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WineApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/School/3APP/SEM1/.NET Advanced/Project/.NETAdvancedProject1/WineAPI/WineApp/AppShell.xaml]
+[C:/.NET Advanced/.NETAdvancedProject1/WineAPI/WineApp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WineApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/School/3APP/SEM1/.NET Advanced/Project/.NETAdvancedProject1/WineAPI/WineApp/Resources/Styles/Colors.xaml]
+[C:/.NET Advanced/.NETAdvancedProject1/WineAPI/WineApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WineApp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/School/3APP/SEM1/.NET Advanced/Project/.NETAdvancedProject1/WineAPI/WineApp/Resources/Styles/Styles.xaml]
+[C:/.NET Advanced/.NETAdvancedProject1/WineAPI/WineApp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WineApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/School/3APP/SEM1/.NET Advanced/Project/.NETAdvancedProject1/WineAPI/WineApp/Views/DetailsPage.xaml]
+[C:/.NET Advanced/.NETAdvancedProject1/WineAPI/WineApp/Views/DetailsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WineApp.Views.DetailsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\DetailsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\DetailsPage.xaml
 
-[C:/School/3APP/SEM1/.NET Advanced/Project/.NETAdvancedProject1/WineAPI/WineApp/Views/HomePage.xaml]
+[C:/.NET Advanced/.NETAdvancedProject1/WineAPI/WineApp/Views/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WineApp.Views.HomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml

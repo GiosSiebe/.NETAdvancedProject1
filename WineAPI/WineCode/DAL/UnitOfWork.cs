@@ -18,7 +18,6 @@ namespace WineCode.DAL
         private IRepository<Kind> kindRepository;
         private IRepository<Recipe> recipeRepository;
         private IRepository<Wine> wineRepository;
-        private IRepository<User> userRepository;
 
         public UnitOfWork(WineContext context) { 
             _context = context;
@@ -36,17 +35,6 @@ namespace WineCode.DAL
             }
         }
 
-        public IRepository<User> UserRepository
-        {
-            get
-            {
-                if (userRepository == null)
-                {
-                    userRepository = new GenericRepository<User>(_context);
-                }
-                return userRepository;
-            }
-        }
 
         public IRepository<Country> CountryRepository
         {
