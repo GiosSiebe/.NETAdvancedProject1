@@ -21,7 +21,15 @@ namespace WineAPI.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Wine>> GetWines()
         {
-            var wines = _uow.WineRepository.GetAll();
+            var wines = _uow.WineRepository.Get(
+            null,
+            null, // No order
+            w => w.Country,           // Include Country
+            w => w.Categories,        // Include Categories
+            w => w.Kind,              // Include Kind
+            w => w.Recipes);          // Inlcude Recipes
+
+
             return Ok(wines);
         }
 
