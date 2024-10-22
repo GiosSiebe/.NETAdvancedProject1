@@ -3,6 +3,7 @@
     public interface INavigationService
     {
         Task NavigateToDetailsAsync();
+        Task NavigateToWineAsync();
         Task NavigateBackAsync();
     }
 }

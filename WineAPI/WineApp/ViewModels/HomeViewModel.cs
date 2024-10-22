@@ -2,11 +2,18 @@
 using CommunityToolkit.Mvvm.Input;
 using System.Windows.Input;
 using WineApp.Services;
+using WineCode.Models;
 
 namespace WineApp.ViewModels
 {
     public class HomeViewModel : ObservableObject, IHomeViewModel
     {
+        private Recipe detectedRecipe;
+        public Recipe DetectedRecipe
+        {
+            get => detectedRecipe;
+            set => SetProperty(ref detectedRecipe, value);
+        }
         private ImageSource photo;
         private bool pictureChosen;
 
@@ -55,9 +62,31 @@ namespace WineApp.ViewModels
 
         private async Task ShowPicture(FileResult photo)
         {
+            AnalyzePhoto(photo);
             var resizedPhoto = await PhotoImageService.ResizePhotoStreamAsync(photo);
             Photo = ImageSource.FromStream(() => new MemoryStream(resizedPhoto));
             PictureChosen = true;
+        }
+
+        private async void AnalyzePhoto(FileResult photo)
+        {
+            DetectedRecipe = new Recipe();
+            var resizedPhoto = await PhotoImageService.ResizePhotoStreamAsync(photo);
+            Photo = ImageSource.FromStream(() => new MemoryStream(resizedPhoto));
+            // Custom Vision API call
+            var result = await CustomVisionService.ClassifyImageAsync(new MemoryStream(resizedPhoto));
+            // Change the percentage notation from 0.9 to display 90.0%
+            var percent = result?.Probability.ToString("P1");
+
+            if (result.TagName.Equals("Negative"))
+            {
+                DetectedRecipe.Name = "This is not a recognized recipe.";
+            }
+            else
+            {
+                DetectedRecipe = BigFiveAnimalDataService.GetBigFiveAnimalByTag(result.TagType)!;
+                DetectedRecipe.Name += " " + percent;
+            };
         }
     }
 }

@@ -27,5 +27,10 @@ namespace WineApp.Services
                 throw new InvalidOperationException("No pages to navigate back to!");
             }
         }
+
+        public async Task NavigateToWineAsync()
+        {
+            await _navigation.PushAsync(_serviceProvider.GetRequiredService<WinePage>());
+        }
     }
 }

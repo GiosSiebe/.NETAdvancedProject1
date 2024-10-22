@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using WineCode.Models;
 
 namespace WineApp.ViewModels
 {
@@ -11,6 +12,7 @@ namespace WineApp.ViewModels
     {
         bool PictureChosen { get; set; }
         ImageSource Photo { get; set; }
+        Recipe DetectedRecipe { get; set; }
         ICommand TakePictureCommand { get; set; }
         ICommand PickPictureCommand { get; set; }
         ICommand AnalyzePictureCommand { get; set; }
