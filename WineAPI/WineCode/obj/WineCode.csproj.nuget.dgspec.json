@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj": {}
+    "C:\\School\\3APP\\SEM1\\.NET Advanced\\ProjectWorkingDirectory\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj": {}
   },
   "projects": {
-    "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj": {
+    "C:\\School\\3APP\\SEM1\\.NET Advanced\\ProjectWorkingDirectory\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj",
+        "projectUniqueName": "C:\\School\\3APP\\SEM1\\.NET Advanced\\ProjectWorkingDirectory\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj",
         "projectName": "WineCode",
-        "projectPath": "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj",
+        "projectPath": "C:\\School\\3APP\\SEM1\\.NET Advanced\\ProjectWorkingDirectory\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj",
         "packagesPath": "C:\\Users\\flori\\.nuget\\packages\\",
-        "outputPath": "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineCode\\obj\\",
+        "outputPath": "C:\\School\\3APP\\SEM1\\.NET Advanced\\ProjectWorkingDirectory\\.NETAdvancedProject1\\WineAPI\\WineCode\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
