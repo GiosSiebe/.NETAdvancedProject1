@@ -5,37 +5,80 @@
              xmlns:viewModels="clr-namespace:WineApp.ViewModels"
              x:DataType="viewModels:IHomeViewModel"
              Title="Wine Recommender">
+
     <ContentPage.Content>
-    <VerticalStackLayout Spacing="20" Padding="30" HorizontalOptions="Center" VerticalOptions="Center">
-        <Label 
-                Text="Upload a picture of your food"
-                FontSize="24"
-                HorizontalOptions="Center" />
+        <ScrollView>
+            <VerticalStackLayout Spacing="30" Padding="40" HorizontalOptions="Center" VerticalOptions="Center">
 
-        <Image x:Name="foodImage"
-                   Source="{Binding Photo}"
-                   WidthRequest="200"
-                   HeightRequest="200"
-                   Aspect="AspectFit"
-                   BackgroundColor="LightGray" />
-        <HorizontalStackLayout Spacing="20" Padding="30" VerticalOptions="Center" HorizontalOptions="Center">
-            <Button 
-                Text="Take Food Image"
-                Command="{Binding TakePictureCommand}"
-                HorizontalOptions="Center" />
-        <Button 
-        Text="Pick Food Image"
-        Command="{Binding PickPictureCommand}"
-        HorizontalOptions="Center" />
-        </HorizontalStackLayout>
+                <!-- Title -->
+                <Label 
+                    Text="Wine Recommender"
+                    FontSize="32"
+                    FontAttributes="Bold"
+                    TextColor="#4A4A4A"
+                    HorizontalOptions="Center" />
 
-        <Button 
-                Text="Analyze Food and Recommend Wine"
-                IsEnabled="{Binding PictureChosen}"
-                Command="{Binding AnalyzePictureCommand}"
-                x:Name="AnalyzeButton"
-                HorizontalOptions="Center" />
+                <!-- Subtitle -->
+                <Label 
+                    Text="Upload a picture of your food"
+                    FontSize="18"
+                    FontAttributes="Italic"
+                    TextColor="#6A6A6A"
+                    HorizontalOptions="Center" />
 
-    </VerticalStackLayout>
+                <!-- Food Image Placeholder -->
+                <Frame 
+                    WidthRequest="250"
+                    HeightRequest="250"
+                    CornerRadius="10"
+                    BackgroundColor="LightGray"
+                    HasShadow="True"
+                    BorderColor="#CCCCCC"
+                    HorizontalOptions="Center">
+                    <Image 
+                        x:Name="foodImage"
+                        Source="{Binding Photo}"
+                        Aspect="AspectFit" />
+                </Frame>
+
+                <!-- Buttons for Taking or Picking an Image -->
+                <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
+                    <Button 
+                        Text="Take Food Image"
+                        Command="{Binding TakePictureCommand}"
+                        BackgroundColor="#6200EA"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        CornerRadius="25"
+                        WidthRequest="150"
+                        HeightRequest="50" />
+
+                    <Button 
+                        Text="Pick Food Image"
+                        Command="{Binding PickPictureCommand}"
+                        BackgroundColor="#03DAC5"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        CornerRadius="25"
+                        WidthRequest="150"
+                        HeightRequest="50" />
+                </HorizontalStackLayout>
+
+                <!-- Analyze Button -->
+                <Button 
+                    Text="Analyze Food and Recommend Wine"
+                    IsEnabled="{Binding PictureChosen}"
+                    Command="{Binding AnalyzePictureCommand}"
+                    BackgroundColor="#FF0266"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="30"
+                    WidthRequest="450"
+                    HeightRequest="60"
+                    HorizontalOptions="Center"
+                     />
+
+            </VerticalStackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
