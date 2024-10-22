@@ -5,10 +5,10 @@ namespace WineApp.Services
 {
     public static class ApiKeys
     {
-        public static string CustomVisionEndPoint => "https://fvrbigfive-prediction.cognitiveservices.azure.com";
-        public static string PredictionKey => "2b3ee4bba41b4a0198ee802a27511728";
-        public static string ProjectId => "dc5e0d66-71db-4807-aabe-8adb59700646";
-        public static string PublishedName => "BigFiveModel";
+        public static string CustomVisionEndPoint => "https://sgbigfive-prediction.cognitiveservices.azure.com/";
+        public static string PredictionKey => "47205d705ef14e2394d7ba5790a39836";
+        public static string ProjectId => "a2ff5e6d-9464-4242-b2c8-d841c56e7ccb";
+        public static string PublishedName => "Project1";
     }
 
     public class CustomVisionService
