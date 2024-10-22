@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\.NET Advanced\\Project1\\WineAPI\\WineApp\\WineApp.csproj": {}
+    "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineApp\\WineApp.csproj": {}
   },
   "projects": {
-    "C:\\.NET Advanced\\Project1\\WineAPI\\WineApp\\WineApp.csproj": {
+    "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineApp\\WineApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\.NET Advanced\\Project1\\WineAPI\\WineApp\\WineApp.csproj",
+        "projectUniqueName": "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineApp\\WineApp.csproj",
         "projectName": "WineApp",
-        "projectPath": "C:\\.NET Advanced\\Project1\\WineAPI\\WineApp\\WineApp.csproj",
-        "packagesPath": "C:\\Users\\r0929434\\.nuget\\packages\\",
-        "outputPath": "C:\\.NET Advanced\\Project1\\WineAPI\\WineApp\\obj\\",
+        "projectPath": "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineApp\\WineApp.csproj",
+        "packagesPath": "C:\\Users\\flori\\.nuget\\packages\\",
+        "outputPath": "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineApp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\r0929434\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\flori\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -37,32 +37,32 @@
           "net8.0-android34.0": {
             "targetAlias": "net8.0-android",
             "projectReferences": {
-              "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\WineCode.csproj": {
-                "projectPath": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\WineCode.csproj"
+              "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj": {
+                "projectPath": "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj"
               }
             }
           },
           "net8.0-ios17.5": {
             "targetAlias": "net8.0-ios",
             "projectReferences": {
-              "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\WineCode.csproj": {
-                "projectPath": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\WineCode.csproj"
+              "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj": {
+                "projectPath": "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj"
               }
             }
           },
           "net8.0-maccatalyst17.5": {
             "targetAlias": "net8.0-maccatalyst",
             "projectReferences": {
-              "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\WineCode.csproj": {
-                "projectPath": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\WineCode.csproj"
+              "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj": {
+                "projectPath": "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj"
               }
             }
           },
           "net8.0-windows10.0.19041": {
             "targetAlias": "net8.0-windows10.0.19041.0",
             "projectReferences": {
-              "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\WineCode.csproj": {
-                "projectPath": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\WineCode.csproj"
+              "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj": {
+                "projectPath": "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj"
               }
             }
           }
@@ -293,20 +293,20 @@
         }
       }
     },
-    "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\WineCode.csproj": {
+    "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\WineCode.csproj",
+        "projectUniqueName": "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj",
         "projectName": "WineCode",
-        "projectPath": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\WineCode.csproj",
-        "packagesPath": "C:\\Users\\r0929434\\.nuget\\packages\\",
-        "outputPath": "C:\\.NET Advanced\\Project1\\WineAPI\\WineCode\\obj\\",
+        "projectPath": "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineCode\\WineCode.csproj",
+        "packagesPath": "C:\\Users\\flori\\.nuget\\packages\\",
+        "outputPath": "C:\\School\\3APP\\SEM1\\.NET Advanced\\Project\\.NETAdvancedProject1\\WineAPI\\WineCode\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\r0929434\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\flori\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
