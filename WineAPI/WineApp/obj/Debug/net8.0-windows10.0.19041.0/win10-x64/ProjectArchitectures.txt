@@ -1,1 +1,0 @@
-C:\School\3APP\SEM1\.NET Advanced\ProjectWorkingDirectory\.NETAdvancedProject1\WineAPI\WineApp\WineApp.csproj;x64
