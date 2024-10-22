@@ -10,10 +10,7 @@ namespace WineCode.Data
 {
     public class WineContext : DbContext
     {
-        public WineContext() { }
-
-        public WineContext(DbContextOptions<WineContext> options) : base(options) { 
-        }
+        public WineContext(DbContextOptions<WineContext> options) : base(options) { }
 
         public DbSet<Wine> Wines { get; set; }
         public DbSet<Category> Categories { get; set; }
@@ -30,6 +27,26 @@ namespace WineCode.Data
             modelBuilder.Entity<Kind>().ToTable("Kind");
             modelBuilder.Entity<Recipe>().ToTable("Recipe");
             modelBuilder.Entity<Favorite>().ToTable("Favorite");
+
+            // Configuring one-to-many relationship between Recipe and Wine
+            modelBuilder.Entity<Recipe>()
+                .HasMany(r => r.Wines) // A recipe can have many wines
+                .WithOne(w => w.Recipe) // A wine belongs to one recipe
+                .HasForeignKey(w => w.RecipeId); // Foreign key in Wine
+
+            // Configuring many-to-many relationship between Favorite and Wine through FavoriteWine
+            modelBuilder.Entity<FavoriteWine>()
+                .HasKey(fw => new { fw.FavoriteId, fw.WineID });
+
+            modelBuilder.Entity<FavoriteWine>()
+                .HasOne(fw => fw.Favorite)
+                .WithMany(f => f.FavoriteWines)
+                .HasForeignKey(fw => fw.FavoriteId);
+
+            modelBuilder.Entity<FavoriteWine>()
+                .HasOne(fw => fw.Wine)
+                .WithMany(w => w.FavoriteWines)
+                .HasForeignKey(fw => fw.WineID);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

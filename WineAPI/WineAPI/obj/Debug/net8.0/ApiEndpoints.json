@@ -483,15 +483,31 @@
   },
   {
     "ContainingType": "WineAPI.Controllers.RecipesController",
-    "Method": "GetRecipe",
+    "Method": "DeleteRecipe",
     "RelativePath": "api/Recipes/{id}",
-    "HttpMethod": "GET",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WineAPI.Controllers.RecipesController",
+    "Method": "GetRecipeByName",
+    "RelativePath": "api/Recipes/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -506,43 +522,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "WineAPI.Controllers.RecipesController",
-    "Method": "PutRecipe",
-    "RelativePath": "api/Recipes/{id}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "recipe",
-        "Type": "WineCode.Models.Recipe",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WineAPI.Controllers.RecipesController",
-    "Method": "DeleteRecipe",
-    "RelativePath": "api/Recipes/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "WineAPI.Controllers.WinesController",
@@ -652,5 +631,31 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WineAPI.Controllers.WinesController",
+    "Method": "GetRecipeByName",
+    "RelativePath": "api/Wines/name/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WineCode.Models.Recipe",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

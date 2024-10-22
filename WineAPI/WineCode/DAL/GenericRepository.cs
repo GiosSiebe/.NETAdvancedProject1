@@ -52,9 +52,7 @@ namespace WineCode.DAL
 
         // Get methode om een specifieke lijst aan objecten terug te geven (met includes)
         // zie winescontroller voor gebruik
-        public IEnumerable<T> Get(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>,
-                                                    IOrderedQueryable<T>> orderBy = null,
-                                                    params Expression<Func<T, object>>[] includes)
+        public IEnumerable<T> Get(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, params Expression<Func<T, object>>[] includes)
         {
             IQueryable<T> query = _table;
 
@@ -69,6 +67,9 @@ namespace WineCode.DAL
 
             return query.ToList();
         }
+
+
+
 
     }
 }

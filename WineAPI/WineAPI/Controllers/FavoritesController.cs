@@ -18,13 +18,19 @@ namespace WineAPI.Controllers
             _uow = uow;
         }
 
-        // GET: api/Favorites
+        // In your FavoritesController
         [HttpGet]
         public ActionResult<IEnumerable<Favorite>> GetFavorites()
         {
-            var favorites = _uow.FavoriteRepository.GetAll();
+            var favorites = _uow.FavoriteRepository.Get(
+                includes: f => f.FavoriteWines, // Gewoon de FavoriteWines opnemen
+                orderBy: q => q.OrderBy(f => f.FavoriteId) // Voorbeeld sortering
+            );
+
             return Ok(favorites);
         }
+
+
 
         // GET: api/Favorites/5
         [HttpGet("{id}")]

@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using WineCode.DAL;
 using WineCode.Models;
 
@@ -21,52 +20,9 @@ namespace WineAPI.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Recipe>> GetRecipes()
         {
-            var recipes = _uow.RecipeRepository.GetAll();
+            // Include the Wines navigation property when retrieving recipes
+            var recipes = _uow.RecipeRepository.Get(includes: r => r.Wines);
             return Ok(recipes);
-        }
-
-        // GET: api/Recipes/5
-        [HttpGet("{id}")]
-        public ActionResult<Recipe> GetRecipe(int id)
-        {
-            var recipe = _uow.RecipeRepository.GetByID(id);
-
-            if (recipe == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(recipe);
-        }
-
-        // PUT: api/Recipes/5
-        [HttpPut("{id}")]
-        public IActionResult PutRecipe(int id, Recipe recipe)
-        {
-            if (id != recipe.RecipeId)
-            {
-                return BadRequest();
-            }
-
-            _uow.RecipeRepository.Update(recipe);
-
-            try
-            {
-                _uow.Save();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!RecipeExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
         }
 
         // POST: api/Recipes
@@ -75,8 +31,24 @@ namespace WineAPI.Controllers
         {
             _uow.RecipeRepository.Insert(recipe);
             _uow.Save();
-
             return CreatedAtAction("GetRecipe", new { id = recipe.RecipeId }, recipe);
+        }
+
+        // GET: api/Recipes/name/{name}
+        [HttpGet("{name}")]
+        public ActionResult<Recipe> GetRecipeByName(string name)
+        {
+            var recipe = _uow.RecipeRepository
+                .Get(r => r.Name.Contains(name),
+                     includes: r => r.Wines) // Include Wines
+                .FirstOrDefault();
+
+            if (recipe == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(recipe);
         }
 
         // DELETE: api/Recipes/5
@@ -91,7 +63,6 @@ namespace WineAPI.Controllers
 
             _uow.RecipeRepository.Delete(id);
             _uow.Save();
-
             return NoContent();
         }
 

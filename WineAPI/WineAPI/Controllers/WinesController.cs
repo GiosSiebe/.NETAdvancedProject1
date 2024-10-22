@@ -102,6 +102,22 @@ namespace WineAPI.Controllers
             return NoContent();
         }
 
+        // GET: api/Recipes/name/{name}
+        [HttpGet("name/{name}")]
+        public ActionResult<Recipe> GetRecipeByName(string name)
+        {
+            // Use the repository to filter by name
+            var recipe = _uow.RecipeRepository.Get(r => r.Name.Equals(name, StringComparison.OrdinalIgnoreCase)).FirstOrDefault();
+
+            if (recipe == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(recipe);
+        }
+
+
         private bool WineExists(int id)
         {
             return _uow.WineRepository.GetByID(id) != null;
