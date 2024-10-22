@@ -15,7 +15,6 @@ namespace WineCode.DAL
         IRepository<Kind> KindRepository { get; }
         IRepository<Recipe> RecipeRepository { get; }
         IRepository<Wine> WineRepository { get; }
-        IRepository<User> UserRepository { get; }
 
         void Save();
     }

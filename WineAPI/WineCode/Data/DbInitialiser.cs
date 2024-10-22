@@ -12,7 +12,7 @@ namespace WineCode.Data
 
             // Check if there is already data in the database
             if (context.Wines.Any() || context.Categories.Any() || context.Countries.Any() ||
-                context.Kinds.Any() || context.Recipes.Any() || context.Favorites.Any() || context.Users.Any())
+                context.Kinds.Any() || context.Recipes.Any() || context.Favorites.Any())
             {
                 return; // DB has been seeded
             }
@@ -44,14 +44,6 @@ namespace WineCode.Data
             };
             context.Kinds.AddRange(kinds);
 
-            // Seed Recipes
-            var recipes = new Recipe[]
-            {
-                new Recipe { Name = "Spaghetti Carbonara", Description = "A creamy pasta dish", Link = "https://dagelijksekost.vrt.be/gerechten/spaghetti-alla-carbonara", Image = "https://www.leukerecepten.nl/app/uploads/2021/06/pasta-carbonara_v.jpg" },
-                new Recipe { Name = "Chicken Cordon Bleu", Description = "Chicken wrapped with ham and cheese", Link = "https://www.libelle-lekker.be/bekijk-recept/2588/cordon-bleu", Image = "https://img.static-rmg.be/a/food/image/q75/w640/h400/2424/cordon-bleu.jpg" }
-            };
-            context.Recipes.AddRange(recipes);
-
             // Seed Wines
             var wines = new Wine[]
             {
@@ -66,7 +58,6 @@ namespace WineCode.Data
                     Country = countries[0], // France
                     Categories = new Category[] { categories[0] }, // Red
                     Kind = kinds[1], // Merlot
-                    Recipes = new Recipe[] { recipes[0] } // Spaghetti Carbonara
                 },
                 new Wine
                 {
@@ -79,27 +70,30 @@ namespace WineCode.Data
                     Country = countries[1], // Italy
                     Categories = new Category[] { categories[1] }, // White
                     Kind = kinds[0], // Sauvignon Blanc
-                    Recipes = new Recipe[] { recipes[1] } // Chicken Cordon Bleu
                 }
             };
             context.Wines.AddRange(wines);
 
-            // Seed Users
-            var users = new User[]
+            // Seed Recipes
+            var recipes = new Recipe[]
             {
-                new User { UserName = "JohnDoe", Password = "12345" },
-                new User { UserName = "JaneDoe", Password = "54321" }
+                new Recipe { Name = "Biefstuk", Description = "Gegrilde biefstuk met kruidenboter", Link = "https://voorbeeld.nl/recepten/biefstuk", Image = "https://voorbeeld.nl/images/biefstuk.jpg", Wines = new Wine[] { wines[0] } }, // Pairing with Chateau Margaux
+                new Recipe { Name = "Friet", Description = "Krokant gebakken Belgische frieten", Link = "https://voorbeeld.nl/recepten/friet", Image = "https://voorbeeld.nl/images/friet.jpg", Wines = new Wine[] { wines[1] } }, // Pairing with Pinot Grigio
+                new Recipe { Name = "Asperges", Description = "Gestoomde asperges met hollandaise saus", Link = "https://voorbeeld.nl/recepten/asperges", Image = "https://voorbeeld.nl/images/asperges.jpg", Wines = new Wine[] { wines[1] } }, // Pairing with Pinot Grigio
+                new Recipe { Name = "Spaghetti", Description = "Spaghetti met klassieke bolognesesaus", Link = "https://voorbeeld.nl/recepten/spaghetti", Image = "https://voorbeeld.nl/images/spaghetti.jpg", Wines = new Wine[] { wines[0] } }, // Pairing with Chateau Margaux
+                new Recipe { Name = "Kip", Description = "Geroosterde kip met kruiden", Link = "https://voorbeeld.nl/recepten/kip", Image = "https://voorbeeld.nl/images/kip.jpg", Wines = new Wine[] { wines[0], wines[1] } } // Pairing with both wines
             };
-            context.Users.AddRange(users);
+            context.Recipes.AddRange(recipes);
+
+            
 
             // Seed Favorites
             var favorites = new Favorite[]
             {
-                new Favorite { User = users[0], Favorites = new List<Wine> { wines[0], wines[1] } },
-                new Favorite { User = users[1], Favorites = new List<Wine> { wines[1] } }
+                new Favorite {Favorites = new List<Wine> { wines[0], wines[1] } },
+                new Favorite {Favorites = new List<Wine> { wines[1] } }
             };
             context.Favorites.AddRange(favorites);
-
 
             // Save changes to the database
             context.SaveChanges();
