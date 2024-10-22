@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using WineCode.Models;
 
 namespace WineTest
@@ -20,7 +22,6 @@ namespace WineTest
             Assert.AreEqual(string.Empty, recipe.Description); // Default value for string is empty
             Assert.AreEqual(string.Empty, recipe.Link); // Default value for string is empty
             Assert.AreEqual(string.Empty, recipe.Image); // Default value for string is empty
-            Assert.IsNull(recipe.Wines); // Default value for ICollection<Wine> is null
         }
 
         [TestMethod]
@@ -105,26 +106,6 @@ namespace WineTest
 
             // Assert
             Assert.AreEqual(expectedName, recipe.Name);
-        }
-
-        [TestMethod]
-        public void Recipe_ShouldAllowSettingWines()
-        {
-            // Arrange
-            var recipe = new Recipe();
-            var expectedWines = new List<Wine>
-            {
-                new Wine { WineID = 1, Name = "Chateau Margaux" },
-                new Wine { WineID = 2, Name = "Pinot Grigio" }
-            };
-
-            // Act
-            recipe.Wines = expectedWines;
-
-            // Assert
-            Assert.AreEqual(expectedWines, recipe.Wines);
-            Assert.AreEqual(2, recipe.Wines.Count);
-            Assert.AreEqual("Chateau Margaux", recipe.Wines.First().Name);
         }
     }
 }
