@@ -9,6 +9,10 @@ namespace WineApp.ViewModels
 {
     public interface IHomeViewModel
     {
+        bool PictureChosen { get; set; }
+        ImageSource Photo { get; set; }
+        ICommand TakePictureCommand { get; set; }
+        ICommand PickPictureCommand { get; set; }
         ICommand AnalyzePictureCommand { get; set; }
     }
 }

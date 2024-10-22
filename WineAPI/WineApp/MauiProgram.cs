@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using WineApp.Services;
 using WineApp.ViewModels;
 using WineApp.Views;
 
@@ -23,6 +24,11 @@ namespace WineApp
 
             builder.Services.AddTransient<HomePage>();
             builder.Services.AddTransient<IHomeViewModel, HomeViewModel>();
+
+            builder.Services.AddTransient<INavigationService, NavigationService>();
+
+            builder.Services.AddTransient<DetailsPage>();
+            //builder.Services.AddTransient<IDetailsViewModel, DetailsPageViewModel>();
 
             return builder.Build();
         }
