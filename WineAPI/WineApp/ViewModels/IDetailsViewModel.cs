@@ -10,6 +10,7 @@ namespace WineApp.ViewModels
 {
     public interface IDetailsViewModel
     {
+        ImageSource Photo { get; set; }
         Recipe DetectedRecipe { get; set; }
         ICommand ToggleFavoriteCommand { get; set; }
         ICommand ShowMoreWinesCommand { get; set; }

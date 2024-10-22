@@ -1,12 +1,65 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="WineApp.Views.DetailsPage"
-             Title="DetailsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:viewModels="clr-namespace:WineApp.ViewModels"
+             x:DataType="viewModels:IDetailsViewModel"
+             Title="Recipe Details">
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout Spacing="20" Padding="20" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+
+                <!-- Photo Section -->
+                <Image Source="{Binding Photo}" 
+                       WidthRequest="250" 
+                       HeightRequest="250"
+                       Aspect="AspectFit"
+                       BackgroundColor="LightGray" 
+                       HorizontalOptions="Center" />
+
+                <!-- Detected Recipe Info -->
+                <StackLayout Spacing="10" Padding="10">
+                    <Label Text="Detected Recipe" 
+                           FontSize="22" 
+                           FontAttributes="Bold" 
+                           HorizontalOptions="Center" />
+
+                    <Label Text="{Binding DetectedRecipe.Name}" 
+                           FontSize="18" 
+                           TextColor="Black"
+                           HorizontalOptions="Center" />
+
+                    <Label Text="{Binding DetectedRecipe.Description}" 
+                           FontSize="14" 
+                           TextColor="Gray" 
+                           HorizontalOptions="Center"
+                           LineBreakMode="WordWrap" 
+                           MaxLines="3" />
+                </StackLayout>
+
+                <!-- Action Buttons Section -->
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+                    <!-- Toggle Favorite -->
+                    <Button Text="Favorite" 
+                            Command="{Binding ToggleFavoriteCommand}" 
+                            HorizontalOptions="Center" />
+
+                    <!-- Show More Wines -->
+                    <Button Text="Show More Wines" 
+                            Command="{Binding ShowMoreWinesCommand}" 
+                            HorizontalOptions="Center" />
+                </StackLayout>
+
+                <!-- Navigate to Wine Details -->
+                <Button Text="Go to Wine Recommendation" 
+                        Command="{Binding NavigateToWineCommand}" 
+                        BackgroundColor="DarkRed" 
+                        TextColor="White"
+                        FontSize="18"
+                        HorizontalOptions="Center"
+                        Padding="10"
+                        Margin="10,20,10,0" />
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>
